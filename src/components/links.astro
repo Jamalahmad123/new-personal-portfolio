@@ -15,7 +15,7 @@
 >
 
 <style>
-  .nav--item[aria-current="page"] {
+  .nav--item.active {
     text-decoration: underline wavy #5fb4a2 0.13rem;
     text-underline-offset: 0.5rem;
   }
@@ -25,9 +25,8 @@
   const manuList = document.querySelectorAll(".nav--item");
   // Activate current link
   manuList.forEach((item) => {
-    console.log(item.href, window.location.href);
     if (item.href === window.location.href) {
-      item.setAttribute("aria-current", "page");
+      item.classList.toggle("active");
     }
   });
 </script>
