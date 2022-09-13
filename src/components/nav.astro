@@ -1,7 +1,3 @@
----
-import Links from "./links.astro";
----
-
 <!-- Navbar -->
 <nav id="#nav" class="pt-10">
   <!-- Container -->
@@ -22,7 +18,21 @@ import Links from "./links.astro";
       id="manu"
       class="bg-darkGray hidden flex-col items-center justify-between gap-8 absolute right-4 top-16 w-56 py-5 z-10 md:bg-transparent md:flex md:flex-row md:static md:py-0 md:w-auto"
     >
-      <Links />
+      <a
+        href="/"
+        class="nav--item text-white hover:text-lightGreen md:text-darkGray md:text-xl"
+        >Home</a
+      >
+      <a
+        href="/portfolio"
+        class="nav--item text-white hover:text-lightGreen md:text-darkGray md:text-xl"
+        >Portfolio</a
+      >
+      <a
+        href="/contact"
+        class="nav--item text-white hover:text-lightGreen md:text-darkGray md:text-xl"
+        >Contact</a
+      >
     </div>
 
     <!-- Hamburger Manu -->
@@ -57,6 +67,19 @@ import Links from "./links.astro";
       hamburgerIcon.src = "../images/icon-close.svg";
     } else {
       hamburgerIcon.src = "../images/icon-hamburger.svg";
+    }
+  });
+
+  // activate current page
+
+  const manuList = document.querySelectorAll(".nav--item");
+  // Activate current link
+  manuList.forEach((item) => {
+    if (
+      item instanceof HTMLAnchorElement &&
+      item.href === window.location.href
+    ) {
+      item.classList.add("active");
     }
   });
 </script>
