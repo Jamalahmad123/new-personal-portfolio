@@ -24,7 +24,7 @@
         >Home</a
       >
       <a
-        href="/portfolio"
+        href="/portfolio/"
         class="nav--item text-white hover:text-lightGreen md:text-darkGray md:text-xl"
         >Portfolio</a
       >
@@ -78,6 +78,8 @@
   // activate current page
 
   const manuList = document.querySelectorAll(".nav--item");
+  console.log(window.location.href);
+
   // Activate current link
   manuList.forEach((item) => {
     let link = item.href;
