@@ -51,6 +51,11 @@
   #manu.show {
     display: flex;
   }
+
+  .nav--item:is(:link, :active, :visited).active {
+    text-decoration: underline wavy #5fb4a2 0.13rem;
+    text-underline-offset: 0.5rem;
+  }
 </style>
 
 <script is:inline>
