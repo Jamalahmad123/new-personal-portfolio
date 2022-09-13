@@ -10,7 +10,11 @@ import Links from "./links.astro";
   >
     <!-- logo -->
     <div>
-      <img src="images/logo-1.png" alt="logo" class="h-8 w-20 object-cover" />
+      <img
+        src="../images/logo-1.png"
+        alt="logo"
+        class="h-8 w-20 object-cover"
+      />
     </div>
 
     <!-- Manu List -->
@@ -50,9 +54,9 @@ import Links from "./links.astro";
 
     // check if show is there
     if (manu.classList.contains("show")) {
-      hamburgerIcon.src = "images/icon-close.svg";
+      hamburgerIcon.src = "../images/icon-close.svg";
     } else {
-      hamburgerIcon.src = "images/icon-hamburger.svg";
+      hamburgerIcon.src = "../images/icon-hamburger.svg";
     }
   });
 </script>
