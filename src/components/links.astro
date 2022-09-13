@@ -14,11 +14,14 @@
   >Contact</a
 >
 
-<script is:inline>
+<script>
   const manuList = document.querySelectorAll(".nav--item");
   // Activate current link
   manuList.forEach((item) => {
-    if (item.href === window.location.href) {
+    if (
+      item instanceof HTMLAnchorElement &&
+      item.href === window.location.href
+    ) {
       item.classList.add("active");
     }
   });
