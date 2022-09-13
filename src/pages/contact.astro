@@ -53,7 +53,12 @@ import SocialLinks from "../components/socialLinks.astro";
           >
             Contact Me
           </h2>
-          <form id="form" class="basis-2/3 space-y-8">
+          <form
+            method="POST"
+            data-netlify="true"
+            id="form"
+            class="basis-2/3 space-y-8"
+          >
             <div class="flex flex-col gap-2">
               <label for="name" class="text-darkGray font-semibold">Name</label>
               <input

@@ -25,7 +25,7 @@
   const manuList = document.querySelectorAll(".nav--item");
   // Activate current link
   manuList.forEach((item) => {
-    // console.log(item.href, window.location.href);
+    console.log(item.href, window.location.href);
     if (item.href === window.location.href) {
       item.setAttribute("aria-current", "page");
     }
