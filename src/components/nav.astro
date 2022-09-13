@@ -81,9 +81,12 @@
   // Activate current link
   console.log(window.location.href);
   manuList.forEach((item) => {
-    console.log(item.href);
-    if (item.href === window.location.href) {
-      console.log(item.href);
+    let link = item.href;
+    if (link[link.length - 1] !== "/") {
+      link = `${link}/`;
+    }
+
+    if (link === window.location.href) {
       item.classList.add("nav--active");
     }
   });
