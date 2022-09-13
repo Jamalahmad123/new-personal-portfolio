@@ -79,12 +79,12 @@
 
   const manuList = document.querySelectorAll(".nav--item");
   // Activate current link
-  console.log(window.location.href);
   manuList.forEach((item) => {
     let link = item.href;
     if (link[link.length - 1] !== "/") {
       link = `${link}/`;
     }
+    console.log(link);
 
     if (link === window.location.href) {
       item.classList.add("nav--active");
