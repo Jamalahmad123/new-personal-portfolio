@@ -1,0 +1,37 @@
+---
+import SocialLinks from "./socialLinks.astro";
+---
+
+<!-- Footer -->
+<footer id="footer" class="bg-darkGray py-12 md:py-6">
+  <div
+    class="container flex flex-col items-center justify-between mx-auto px-4 md:flex-row"
+  >
+    <!-- logo -->
+    <div>
+      <!-- <h1 class="text-xl font-semibold text-white md:text-2xl">
+        JamalDev.
+      </h1> -->
+      <img
+        src="/images/logo-white.png"
+        alt="logo-white"
+        class="h-8 w-20 object-cover"
+      />
+    </div>
+    <!-- Manu List -->
+    <div
+      class="flex flex-col items-center py-8 gap-3 md:flex-row md:gap-4 md:py-0"
+    >
+      <a href="/" class="text-white text-lg hover:text-lightGreen">Home</a>
+      <a href="/portfolio" class="text-white text-lg hover:text-lightGreen"
+        >Portfolio</a
+      >
+      <a href="./contact.html" class="text-white text-lg hover:text-lightGreen"
+        >Contact</a
+      >
+    </div>
+
+    <!-- scoial Icons -->
+    <SocialLinks />
+  </div>
+</footer>

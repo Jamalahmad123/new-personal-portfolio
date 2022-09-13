@@ -1,0 +1,58 @@
+---
+import Links from "./links.astro";
+---
+
+<!-- Navbar -->
+<nav id="#nav" class="pt-10">
+  <!-- Container -->
+  <div
+    class="relative container flex items-center justify-between mx-auto px-4"
+  >
+    <!-- logo -->
+    <div>
+      <img src="/images/logo-1.png" alt="logo" class="h-8 w-20 object-cover" />
+    </div>
+
+    <!-- Manu List -->
+    <div
+      id="manu"
+      class="bg-darkGray hidden flex-col items-center justify-between gap-8 absolute right-4 top-16 w-56 py-5 z-10 md:bg-transparent md:flex md:flex-row md:static md:py-0 md:w-auto"
+    >
+      <Links />
+    </div>
+
+    <!-- Hamburger Manu -->
+    <div class="md:hidden">
+      <img
+        src="images/icon-hamburger.svg"
+        alt="icon-hamburger"
+        class="hamburger h-4 cursor-pointer"
+      />
+    </div>
+  </div>
+</nav>
+
+<!-- Style -->
+<style>
+  #manu.show {
+    display: flex;
+  }
+</style>
+
+<script is:inline>
+  // UI Elements
+  const manu = document.querySelector("#manu");
+  const hamburgerIcon = document.querySelector(".hamburger");
+
+  // Eventhandler
+  hamburgerIcon.addEventListener("click", function () {
+    manu.classList.toggle("show");
+
+    // check if show is there
+    if (manu.classList.contains("show")) {
+      hamburgerIcon.src = "images/icon-close.svg";
+    } else {
+      hamburgerIcon.src = "images/icon-hamburger.svg";
+    }
+  });
+</script>

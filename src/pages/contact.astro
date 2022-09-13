@@ -1,0 +1,103 @@
+---
+// Import Layout
+import Layout from "../layouts/layout.astro";
+
+// Import Components
+import BtnCommen from "../components/btnCommen.astro";
+import SocialLinks from "../components/socialLinks.astro";
+---
+
+<!-- Layout -->
+<Layout title="Jamal's Portfolio | Contact">
+  <!-- Contact content -->
+  <!-- Main -->
+  <main class="mt-16">
+    <!-- Container -->
+    <div class="container mx-auto px-4">
+      <!-- Contact Heading -->
+      <section
+        id="contact-heading"
+        class="flex flex-col justify-center py-8 space-y-6 border-t border-b border-gray-400 lg:flex-row lg:justify-between lg:gap-10 lg:space-y-0"
+      >
+        <h2
+          class="text-darkGray font-heading font-semibold text-3xl md:text-4xl"
+        >
+          Get in Touch
+        </h2>
+
+        <!-- content -->
+        <div class="basis-2/3 space-y-6">
+          <p class="text-darkGray opacity-80 text-justify">
+            I’d love to hear about what you’re working on and how I could help.
+            I’m currently looking for a new role and am open to a wide range of
+            opportunities. My preference would be to find a position in a
+            company in London. But I’m also happy to hear about opportunites
+            that don’t fit that description. I’m a hard-working and positive
+            person who will always approach each task with a sense of purpose
+            and attention to detail. Please do feel free to check out my online
+            profiles below and get in touch using the form.
+          </p>
+
+          <!-- scoial Icons -->
+          <SocialLinks dark={true} />
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section id="contact-form" class="py-8">
+        <div
+          class="flex flex-col justify-center py-8 space-y-8 lg:flex-row lg:justify-between lg:gap-6 lg:space-y-0"
+        >
+          <h2
+            class="text-darkGray font-heading font-semibold text-3xl md:text-4xl"
+          >
+            Contact Me
+          </h2>
+          <form id="form" class="basis-2/3 space-y-8">
+            <div class="flex flex-col gap-2">
+              <label for="name" class="text-darkGray font-semibold">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="bg-gray-100 py-3 px-3 text-base text-darkGray outline-none focus:border focus:border-lightGreen"
+                placeholder="John Dov"
+              />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="email" class="text-darkGray font-semibold"
+                >Email</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="bg-gray-100 py-3 px-3 text-base text-darkGray outline-none focus:border focus:border-lightGreen"
+                placeholder="John Dov"
+              />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="name" class="text-darkGray font-semibold"
+                >Message</label
+              >
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                placeholder="how can i help you?"
+                class="bg-gray-100 text-darkGray py-3 px-3 outline-none focus:border focus:border-lightGreen"
+              ></textarea>
+            </div>
+            <!-- button -->
+            <BtnCommen btnTitle="message me" linkOrBtn={false} />
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
+
+<!-- JS -->
+<!-- <script is:inline>
+  const fullName = document.getElementById("");
+</script> -->

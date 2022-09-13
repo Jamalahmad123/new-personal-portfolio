@@ -1,0 +1,18 @@
+---
+const { btnTitle, url, linkOrBtn = true } = Astro.props;
+---
+
+{
+  linkOrBtn ? (
+    <a
+      href={url}
+      class="bg-none text-darkGray text-xs sm:text-sm uppercase py-2 px-4 sm:px-6 inline-block border border-darkBorder hover:bg-darkGray hover:text-white shadow-lg"
+    >
+      {btnTitle}
+    </a>
+  ) : (
+    <button class="bg-none text-darkGray text-xs  sm:text-sm uppercase py-2 px-4 sm:px-6 inline-block border border-darkBorder hover:bg-darkGray hover:text-white shadow-lg">
+      {btnTitle}
+    </button>
+  )
+}

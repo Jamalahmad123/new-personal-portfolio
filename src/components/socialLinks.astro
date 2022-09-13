@@ -1,0 +1,24 @@
+---
+const { dark = false } = Astro.props;
+---
+
+<div class={`flex gap-5 ${dark}`}>
+  <a href="https://github.com/Jamalahmad123" target="_blank">
+    <i
+      class={`fa-brands fa-github fa-2x ${
+        dark ? "text-darkGray" : "text-white"
+      } hover:text-lightGreen`}></i>
+  </a>
+  <a href="https://twitter.com/JamalAhmadJS" target="_blank">
+    <i
+      class={`fa-brands fa-twitter fa-2x ${
+        dark ? "text-darkGray" : "text-white"
+      } hover:text-lightGreen`}></i>
+  </a>
+  <a href="https://www.linkedin.com/in/jamalahmadjs/" target="_blank">
+    <i
+      class={`fa-brands fa-linkedin fa-2x ${
+        dark ? "text-darkGray" : "text-white"
+      } hover:text-lightGreen`}></i>
+  </a>
+</div>

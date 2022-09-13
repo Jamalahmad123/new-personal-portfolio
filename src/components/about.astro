@@ -1,0 +1,41 @@
+---
+// import profileImg from "../images/profile-img-1.jpg";
+
+// Components
+import BtnCommen from "./btnCommen.astro";
+---
+
+<!-- About Section -->
+<section id="about" class="pt-28">
+  <!-- Flex Container -->
+  <div
+    id="about-me"
+    class="container flex flex-col space-y-8 mx-auto px-4 md:flex-row md:gap-12 xl:gap-0 md:space-y-0"
+  >
+    <!-- About Image -->
+    <div>
+      <img
+        src="images/profile-img-1.jpg"
+        alt="profile-img"
+        class="md:w-96 xl:w-4/5"
+      />
+    </div>
+
+    <!-- About Content -->
+    <div
+      class="basis-2/3 py-8 space-y-8 md:pt-10 border-t-2 border-b-2 border-gray-200"
+    >
+      <h2 class="font-heading text-4xl font-semibold text-darkGray md:text-5xl">
+        About Me
+      </h2>
+      <p class="text-darkGray text-base text-justify opacity-80 xl:max-w-2xl">
+        I am a Front-End developer and a computer science graduate. I have been
+        working with Front-End technologies for the last 2 years. I am
+        passionate about making awesome websites that are both functional and
+        aesthetically pleasing. I'm a quiet achiever who loves to code great
+        websites, with a focus on usability and fun.
+      </p>
+      <BtnCommen btnTitle="go to portfolio" url="/portfolio" />
+    </div>
+  </div>
+</section>
