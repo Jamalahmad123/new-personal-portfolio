@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav--item.active {
+  text-decoration: underline wavy #5fb4a2 0.13rem;
+  text-underline-offset: 0.5rem;
+}
