@@ -22,12 +22,12 @@ import projects from "../data/projects.json";
               <img
                 src={project.img}
                 alt="project-img"
-                class="w-full h-auto shadow-md"
+                class="w-full h-auto shadow-lg rounded-lg"
               />
             </div>
             <div
               class={`space-y-6 py-8 border-t border-b border-gray-400 md:w-1/2 ${
-                project.reverse && "md:-order-1"
+                project?.reverse && "md:-order-1"
               }`}
             >
               <h2 class="text-darkGray font-heading font-semibold text-xl capitalize md:text-4xl">
@@ -37,8 +37,20 @@ import projects from "../data/projects.json";
                 {project.desc}
               </p>
               <div class="flex gap-4">
-                <BtnCommen btnTitle=" View Project " url={project.live} />
-                <BtnCommen btnTitle=" View Code " url={project.code} />
+                <a
+                  href={project.live}
+                  target="_blank"
+                  class="bg-none text-darkGray text-xs sm:text-sm uppercase py-2 px-4 sm:px-6 inline-block border border-darkBorder hover:bg-darkGray hover:text-white shadow-lg"
+                >
+                  View Project
+                </a>
+                <a
+                  href={project.code}
+                  target="_blank"
+                  class="bg-none text-darkGray text-xs sm:text-sm uppercase py-2 px-4 sm:px-6 inline-block border border-darkBorder hover:bg-darkGray hover:text-white shadow-lg"
+                >
+                  View Code
+                </a>
               </div>
             </div>
           </div>

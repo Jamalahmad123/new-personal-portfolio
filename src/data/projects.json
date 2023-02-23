@@ -1,39 +1,47 @@
 [
   {
-    "title": "github user finder",
-    "desc": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.",
-    "img": "../images/project-github-user.jpg",
-    "live": "https://githubuserfinderpro.netlify.app/",
-    "code": "https://github.com/Jamalahmad123/Dev-Finder"
+    "title": "autosecure web-app",
+    "desc": "autosecure is Germany-based company, which provide services about security cameras in different firms. the development process of this application involved careful planning, selecting the right tools for the job, and creating a robust application that met the needs of the client. By utilizing these tools and prioritizing security, I was able to build a high-quality web application for Autosecure that met their needs and exceeded their expectations.",
+    "img": "../images/autosecure-app.jpeg",
+    "live": "https://autosecure.net",
+    "code": "/"
   },
   {
-    "title": "modern clock app",
-    "desc": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.",
-    "img": "../images/project-clock.jpg",
-    "reverse": true,
-    "live": "https://jamalahmad123.github.io/Modern-Clock-App/",
-    "code": "https://github.com/Jamalahmad123/Modern-Clock-App"
-  },
-  {
-    "title": "e-commerce product page",
-    "desc": "This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.",
-    "img": "../images/project-EPP.jpg",
-    "live": "https://e-commerce-product-page-pro.netlify.app/",
-    "code": "https://github.com/Jamalahmad123/Ecommerce-product-page"
-  },
-  {
-    "title": "manage",
-    "desc": "This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.",
-    "img": "../images/project-1.jpg",
-    "live": "https://jamalahmad.netlify.app/",
-    "code": "https://github.com/Jamalahmad123",
+    "title": "NerdwareHub",
+    "desc": "As a digital agency specializing in web and mobile applications, Nerdwarehub needed a portfolio website that showcased their expertise and past work. To meet their needs, I designed and developed a website using modern web technologies and design principles. I started by selecting a modern tech stack, using ReactJS as the main framework and incorporating other libraries such as framer-motion, tailwindcss, and React-Router-DOM to create a responsive design and easy navigation.",
+    "img": "../images/nerdwarehub.jpeg",
+    "live": "https://nerdwarehub.com",
+    "code": "https://github.com/Jamalahmad123/nerdware-hub-portfolio",
     "reverse": true
   },
   {
-    "title": "sabir's portfolio",
-    "desc": "This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.",
-    "img": "../images/project-portfolio.png",
-    "live": "https://sabirthedesigner.netlify.app/",
-    "code": "https://github.com/Jamalahmad123/sabir-portfolio"
+    "title": "Entertainment App",
+    "desc": "To build an entertainment web-app that utilizes The Movie Database API to showcase different categories of movies and TV shows, I started by planning and designing the app's architecture and user interface. I used ReactJS as the main framework for developing the web-app, as it provides a fast and efficient way to build web applications. To connect with The Movie Database API, I utilized react query, a popular library for data fetching without worrying about the infinity loop, loading and much more. This allowed the app to retrieve data from the API and display it to the user in a user-friendly manner. I also incorporated other libraries such as react-router-dom to create an easy-to-navigate app with different categories and genres of movies and TV shows.",
+    "img": "../images/entertainment-app.jpeg",
+    "live": "https://entertainment-tmdb.netlify.app",
+    "code": "https://github.com/Jamalahmad123/entertainment-app"
+  },
+  {
+    "title": "Fitness gym",
+    "desc": "To build a fitness gym web application with an awesome UI and over 200 different exercises in each category, I started by selecting the right tech stack. I decided to use ReactJS as the main framework for building the application, as it provides a modern and scalable platform for building single-page applications. I also incorporated libraries such as material UI to create a responsive design and easy navigation. To showcase the exercises, I used DB exercises api, and utilized libraries such as React Query and Axios to retrieve and display the data dynamically on the web application. I also added features such as a search bar and filters to help users quickly find exercises based on their preferences.",
+    "img": "../images/fitness-app.jpeg",
+    "live": "https://goldfitness-app.netlify.app",
+    "code": "https://github.com/Jamalahmad123/Fitness-app",
+    "reverse": true
+  },
+  {
+    "title": "Cryptoverse",
+    "desc": "To build a cryptoverse web application for crypto currencies with pagination, search, and dark mode, I started by selecting the right tech stack. I used ReactJS as the main framework for building the application, and incorporated libraries such as React-Router-DOM and react query to create dynamic routing and retrieve data from the API. I also used CSS to style the web application, and included libraries such as React tailwindcss react Icons to create a modern design. To showcase the different crypto currencies, I used an API to retrieve the data, and implemented pagination and search functionality to improve user experience. I utilized React-Query to retrieve and display the data dynamically on the web application, allowing users to browse through different crypto currencies easily.",
+    "img": "../images/cryptoverse.jpeg",
+    "live": "https://crypto-base-react.netlify.app",
+    "code": "https://github.com/Jamalahmad123/Cryptoverse"
+  },
+  {
+    "title": "Dictionary web-App",
+    "desc": "To build a dictionary web application, I started by selecting the right tech stack. I used ReactJS as the main framework for building the application, and incorporated libraries such as Axios to retrieve data from APIs, and React-Router-DOM to create dynamic routing. I also used CSS to style the web application, and included libraries such as tailwindcss to create a modern design. To showcase the different words and their meanings, I used an API to retrieve the data and display it to the user in a user-friendly manner. I implemented search functionality, allowing users to search for specific words based on titles or categories.",
+    "img": "../images/dictionary-app.jpeg",
+    "live": "https://dictionary-app-mod.netlify.app",
+    "code": "https://github.com/Jamalahmad123/Dictionary-App",
+    "reverse": true
   }
 ]
