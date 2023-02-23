@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.card-animation:hover {
+.card-animation:hover img {
   animation: wiggle 0.35s ease;
 }
 
